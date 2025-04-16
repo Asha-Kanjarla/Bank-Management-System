@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action="" method="post" style="height: 150px; width: 500px;margin-top: 6%;">
+    {% csrf_token %}
+    <label for=""><b>ACCOUNT NUMBER:</b></label>
+    <input type="number" name="acc" id=""><br><br>
+    <!-- <label for="">PIN</label>
+    <input type="number" name="pin1" id=""><br><br>
+    <label for="">CONFIRM PIN</label>
+    <input type="number" name="pin2" id=""><br><br> -->
+    <button type="submit" style="height: 40px; width: 200px;">Generate OTP</button>
+</form>
+
+{% endblock content %}

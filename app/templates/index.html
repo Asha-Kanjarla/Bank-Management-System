@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- <h1>Index html pg</h1> -->
+ {% load static %}
+ <div id="igs">
+    <a href="{% url 'create' %}"><img src="{% static 'assets/account.webp' %}" alt=""><br><br><b>Account Creation</b></a>
+ <a href="{% url 'pin' %}"><img src="{% static 'assets/pin.webp' %}" alt=""> <br><br><b>PIN Generation</b></a>
+<a href="{% url 'balance' %}"> <img src="{% static 'assets/balance.webp' %}" alt=""><br><br><b>Balanace Checking</b></a>
+ <a href="{% url 'take' %}"><img src="{% static 'assets/withdrawl.png' %}" alt=""><br><br><b>Withdrawl</b></a>
+ <a href="{% url 'deposite' %}"><img src="{% static 'assets/deposite.jpg' %}" alt=""><br><br><b>Deposit</b></a>
+ <a href="{% url 'transfer' %}"><img src="{% static 'assets/transfer.png' %}" alt=""><br><br><b>Money Transfer</b></a>
+ </div>
+{% endblock content %}

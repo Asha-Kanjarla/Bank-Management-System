@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if var %}
+<h1>The balance is: {{bal}}</h1>
+{% else %}
+<h2 id="tit"><u>Check Balance:</u> </h2>
+<form action="" method="post" style="height: 200px;width: 400px;">
+    {% csrf_token %}
+    <label for=""><b>ACC:</b></label>
+    <input type="number" name="acc" id=""> <br><br>
+    <label for=""><b>PIN:</b></label>
+    <input type="password" name="pin" maxlength="4" id=""><br><br>
+    <button type="submit" style="height: 40px; width: 180px;">Check Balance</button>
+</form>
+{% endif %}
+
+<!-- we use this msg for 2nd way -->
+<h5 style="color:red;margin-left: 45%; font-size: 18px;">{{msg}}</h5>
+{% endblock content %}

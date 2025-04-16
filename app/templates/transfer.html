@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 id="tit"><u>Money Transfer:</u> </h2>
+<form action="" method="post" style="height: 300px; width: 500px;">
+    {% csrf_token %}
+    <label for=""><b>FROM ACCOUNT:</b></label>
+    <input type="number" name="f_acc" id=""><br><br>
+    <label for=""><b>TO ACCOUNT:</b></label>
+    <input type="number" name="t_acc" id=""><br><br>
+    <label for=""><b>PIN:</b></label>
+    <input type="password" name="pin" id=""><br><br>
+    <label for=""><b>AMOUNT:</b></label>
+    <input type="number" name="amt" id=""><br><br>
+    <button type="submit">Transfer</button>
+</form>
+
+<h5 style="color:red">{{msg}}</h5>
+{% endblock content %}

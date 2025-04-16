@@ -1,0 +1,33 @@
+form{
+    border: 1px solid;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    padding-top: 20px;
+    background:linear-gradient(rgb(218, 21, 159),rgb(218, 21, 159),#0000ff);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 20px;
+    button{
+        width: 100px;
+        height: 40px;
+        border-radius: 25px;
+        background-color: black;
+        color: aliceblue;
+        font-size: 16px;
+    }
+    input{
+        height: 30px;
+        width: 200px;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+
+}
+form:hover{
+    box-shadow: 5px 5px 30px hotpink , -5px -5px 30px hotpink;
+}
+#tit{
+    padding-left: 43%;
+    font-size: 28px;
+}

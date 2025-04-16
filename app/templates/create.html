@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h2 id="tit"><u>Account Creation:</u> </h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for=""><b>NAME:</b></label>
+        <input type="text" name="name" id=""><br><br>
+        <label for=""><b>DOB:</b></label>
+        <input type="date" name="dob" id=""><br><br>
+        <label for=""><b>PAN:</b></label>
+        <input type="text" name="pan" id=""><br><br>
+        <label for=""><b>AADHAR:</b></label>
+        <input type="number" maxlength="12" name="aadhar" id=""><br><br>
+        <label for=""><b>MOBILE:</b></label>
+        <input type="tell" name="mobile" id=""><br><br>
+        <label for=""><b>ADDRESS:</b></label>
+        <textarea name="address" id=""></textarea><br><br>
+        <label for=""><b>EMAIL:</b></label>
+        <input type="text" name="email" id=""><br><br>
+        <button>Submit</button>
+    </form>
+
+{% endblock content %}

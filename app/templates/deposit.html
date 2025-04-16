@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 id="tit"><u>Deposit:</u> </h2>
+<form action="" method="post" style="height: 250px; width: 400px;">
+    {% csrf_token %}
+    <label for=""><b>ACC:</b></label>
+    <input type="number" name="acc" id=""><br><br>
+    <label for=""><b>PIN:</b></label>
+    <input type="password" name="pin" id=""><br><br>
+    <label for=""><b>Amount:</b></label>
+    <input type="number" name="amt" id=""><br><br>
+    <button type="submit">Deposit</button>
+</form>
+{{msg}}
+{% endblock content %}
