@@ -7,4 +7,10 @@ This project simulates basic banking operations such as:
 5. Withdrawl: Withdraw money with PIN verification
 6. Money Tranfer: Transfer funds btw accounts.
    
-Technologies Used: Django | Python | HTML | CSS | SQLite3
+<b>Technologies Used:</b> Django | Python | HTML | CSS | SQLite3
+
+<br>
+<h1>Home Page:</h1>
+
+
+![Image Alt](https://github.com/Asha-Kanjarla/Bank-Management-System/blob/74d8a5d0fcc52e88be8088a98520d98759f27155/Screenshot%20(84).png)
